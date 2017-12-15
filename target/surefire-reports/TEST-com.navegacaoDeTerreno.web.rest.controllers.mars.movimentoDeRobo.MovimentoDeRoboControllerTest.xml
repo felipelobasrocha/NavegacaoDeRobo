@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest" time="0.14" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.141-b16"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/felipelobas/Documentos/code/NavegacaoDeTerreno"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/felipelobas/Documentos/code/NavegacaoDeTerreno"/>
+    <property name="java.runtime.version" value="1.8.0_141-b16"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/local/apache-maven/apache-maven-3.5.2/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/local/apache-maven/apache-maven-3.5.2/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.11.12-100.fc24.x86_64"/>
+    <property name="library.jansi.path" value="/usr/local/apache-maven/apache-maven-3.5.2/lib/jansi-native"/>
+    <property name="user.home" value="/home/felipelobas"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="felipelobas"/>
+    <property name="java.class.path" value="/usr/local/apache-maven/apache-maven-3.5.2/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_141"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/apache-maven/apache-maven-3.5.2"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="movimentarRoboTest" classname="com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest" time="0.14">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;400&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<400>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:665)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest.movimentarRoboTest(MovimentoDeRoboControllerTest.java:47)
+]]></failure>
+    <system-out><![CDATA[21:50:46.828 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]
+21:50:46.841 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:50:46.855 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:50:46.881 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+21:50:46.927 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest], using SpringBootContextLoader
+21:50:46.935 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]: class path resource [com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo/MovimentoDeRoboControllerTest-context.xml] does not exist
+21:50:46.936 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]: class path resource [com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo/MovimentoDeRoboControllerTestContext.groovy] does not exist
+21:50:46.937 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:50:46.938 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]: MovimentoDeRoboControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:50:47.093 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]
+21:50:47.103 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+21:50:47.105 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+21:50:47.106 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+21:50:47.124 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo/] to resources [URL [file:/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo/], URL [file:/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo/]]
+21:50:47.125 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo]
+21:50:47.126 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo] for files matching pattern [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo/*.class]
+21:50:47.133 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo]
+21:50:47.134 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo] for files matching pattern [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo/*.class]
+21:50:47.134 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo/*.class] to resources [file [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo/MovimentoDeRoboControllerTest.class], file [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo/MovimentoDeRoboController.class]]
+21:50:47.177 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/navegacaoDeTerreno/web/rest/controllers/mars/] to resources [URL [file:/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/com/navegacaoDeTerreno/web/rest/controllers/mars/], URL [file:/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers/mars/]]
+21:50:47.178 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/com/navegacaoDeTerreno/web/rest/controllers/mars]
+21:50:47.179 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/com/navegacaoDeTerreno/web/rest/controllers/mars] for files matching pattern [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/com/navegacaoDeTerreno/web/rest/controllers/mars/*.class]
+21:50:47.180 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers/mars]
+21:50:47.180 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers/mars] for files matching pattern [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers/mars/*.class]
+21:50:47.181 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/navegacaoDeTerreno/web/rest/controllers/mars/*.class] to resources []
+21:50:47.182 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/navegacaoDeTerreno/web/rest/controllers/] to resources [URL [file:/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/com/navegacaoDeTerreno/web/rest/controllers/], URL [file:/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers/]]
+21:50:47.183 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/com/navegacaoDeTerreno/web/rest/controllers]
+21:50:47.184 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/com/navegacaoDeTerreno/web/rest/controllers] for files matching pattern [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/com/navegacaoDeTerreno/web/rest/controllers/*.class]
+21:50:47.185 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers]
+21:50:47.186 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers] for files matching pattern [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers/*.class]
+21:50:47.187 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/navegacaoDeTerreno/web/rest/controllers/*.class] to resources [file [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers/Application.class]]
+21:50:47.238 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/com/navegacaoDeTerreno/web/rest/controllers/Application.class]
+21:50:47.239 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.navegacaoDeTerreno.web.rest.controllers.Application for test class com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest
+21:50:47.242 [main] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]: using defaults.
+21:50:47.246 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:50:47.258 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+21:50:47.259 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+21:50:47.264 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4c1d9d4b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7b227d8d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7219ec67, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45018215, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@65d6b83b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d706f19, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@30b7c004, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@79efed2d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2928854b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@27ae2fd0]
+21:50:47.274 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.navegacaoDeTerreno.service.implementation.movimentoDeRobo.MovimentoRoboServiceImplTest]
+21:50:47.274 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:50:47.275 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:50:47.275 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.navegacaoDeTerreno.service.implementation.movimentoDeRobo.MovimentoRoboServiceImplTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+21:50:47.283 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.navegacaoDeTerreno.service.implementation.movimentoDeRobo.MovimentoRoboServiceImplTest], using DelegatingSmartContextLoader
+21:50:47.283 [main] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@d4342c2 declaringClass = 'com.navegacaoDeTerreno.service.implementation.movimentoDeRobo.MovimentoRoboServiceImplTest', classes = '{}', locations = '{}', inheritLocations = false, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+21:50:47.284 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.navegacaoDeTerreno.service.implementation.movimentoDeRobo.MovimentoRoboServiceImplTest]: class path resource [com/navegacaoDeTerreno/service/implementation/movimentoDeRobo/MovimentoRoboServiceImplTest-context.xml] does not exist
+21:50:47.284 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.navegacaoDeTerreno.service.implementation.movimentoDeRobo.MovimentoRoboServiceImplTest]: no resource found for suffixes {-context.xml}.
+21:50:47.286 [main] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@d4342c2 declaringClass = 'com.navegacaoDeTerreno.service.implementation.movimentoDeRobo.MovimentoRoboServiceImplTest', classes = '{}', locations = '{}', inheritLocations = false, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+21:50:47.287 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.navegacaoDeTerreno.service.implementation.movimentoDeRobo.MovimentoRoboServiceImplTest]: MovimentoRoboServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:50:47.292 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.navegacaoDeTerreno.service.implementation.movimentoDeRobo.MovimentoRoboServiceImplTest]
+21:50:47.292 [main] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.navegacaoDeTerreno.service.implementation.movimentoDeRobo.MovimentoRoboServiceImplTest]: using defaults.
+21:50:47.297 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:50:47.298 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+21:50:47.300 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+21:50:47.301 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3cc2931c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@20d28811, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3967e60c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@60d8c9b7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@48aaecc3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7c0c77c7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7adda9cc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5cee5251, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@433d61fb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5c909414]
+21:50:47.311 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class hello.HelloControllerTest]
+21:50:47.313 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:50:47.314 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:50:47.317 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [hello.HelloControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+21:50:47.319 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [hello.HelloControllerTest], using SpringBootContextLoader
+21:50:47.321 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [hello.HelloControllerTest]: class path resource [hello/HelloControllerTest-context.xml] does not exist
+21:50:47.322 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [hello.HelloControllerTest]: class path resource [hello/HelloControllerTestContext.groovy] does not exist
+21:50:47.322 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [hello.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:50:47.324 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [hello.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:50:47.353 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [hello.HelloControllerTest]
+21:50:47.354 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+21:50:47.355 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+21:50:47.356 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+21:50:47.357 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [hello/] to resources [URL [file:/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/hello/], URL [file:/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/hello/]]
+21:50:47.358 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/hello]
+21:50:47.358 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/hello] for files matching pattern [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/hello/*.class]
+21:50:47.360 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/hello]
+21:50:47.361 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/hello] for files matching pattern [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/hello/*.class]
+21:50:47.364 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:hello/*.class] to resources [file [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/hello/HelloControllerIT.class], file [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/test-classes/hello/HelloControllerTest.class], file [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/hello/Application.class], file [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/hello/HelloController.class]]
+21:50:47.371 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/felipelobas/Documentos/code/NavegacaoDeTerreno/target/classes/hello/Application.class]
+21:50:47.373 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration hello.Application for test class hello.HelloControllerTest
+21:50:47.384 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [hello.HelloControllerTest]: using defaults.
+21:50:47.388 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:50:47.394 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+21:50:47.397 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+21:50:47.399 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4ac3c60d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4facf68f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@76508ed1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@41e36e46, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@15c43bd9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d74bf60, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4f209819, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@15eb5ee5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2145b572, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@39529185]
+21:50:47.404 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]
+21:50:47.408 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]
+21:50:47.409 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.navegacaoDeTerreno.service.implementation.movimentoDeRobo.MovimentoRoboServiceImplTest]
+21:50:47.409 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.navegacaoDeTerreno.service.implementation.movimentoDeRobo.MovimentoRoboServiceImplTest]
+21:50:47.413 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [hello.HelloControllerTest]
+21:50:47.417 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hello.HelloControllerTest]
+21:50:47.423 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]
+21:50:47.424 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:50:47.424 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:50:47.425 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+21:50:47.426 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest], using SpringBootContextLoader
+21:50:47.428 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]: class path resource [com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo/MovimentoDeRoboControllerTest-context.xml] does not exist
+21:50:47.429 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]: class path resource [com/navegacaoDeTerreno/web/rest/controllers/mars/movimentoDeRobo/MovimentoDeRoboControllerTestContext.groovy] does not exist
+21:50:47.430 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:50:47.431 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]: MovimentoDeRoboControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:50:47.464 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]
+21:50:47.466 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+21:50:47.467 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+21:50:47.468 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+21:50:47.469 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.navegacaoDeTerreno.web.rest.controllers.Application for test class com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest
+21:50:47.472 [main] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]: using defaults.
+21:50:47.476 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:50:47.496 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+21:50:47.498 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+21:50:47.498 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6adbc9d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4550bb58, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ec4f3a0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@223191a6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@49139829, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@9597028, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6069db50, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4efbca5a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1b7cc17c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@59662a0b]
+21:50:47.499 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]
+21:50:47.499 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]
+21:50:47.500 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]
+21:50:47.505 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]
+21:50:47.515 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1bd4fdd testClass = MovimentoDeRoboControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@55183b20 testClass = MovimentoDeRoboControllerTest, locations = '{}', classes = '{class com.navegacaoDeTerreno.web.rest.controllers.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@4f83df68 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration, org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7276c8cd, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@150c158, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@701b9ef6, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@6fb0d3ed, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@e712ab15, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@61b0307, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2bea5ab4], resourceBasePath = '', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+21:50:47.517 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]
+21:50:47.518 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest]
+21:50:47.521 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@1bd4fdd testClass = MovimentoDeRoboControllerTest, testInstance = com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboControllerTest@f6efaab, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@55183b20 testClass = MovimentoDeRoboControllerTest, locations = '{}', classes = '{class com.navegacaoDeTerreno.web.rest.controllers.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@4f83df68 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration, org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7276c8cd, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@150c158, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@701b9ef6, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@6fb0d3ed, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@e712ab15, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@61b0307, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2bea5ab4], resourceBasePath = '', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+21:50:47.613 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+21:50:47.614 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+21:50:47.614 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+21:50:47.616 [main] DEBUG org.springframework.core.env.MutablePropertySources - Adding [inline] PropertySource with highest search precedence
+21:50:47.623 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true, server.port=-1}
+21:50:47.624 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.6.RELEASE)
+
+2017-12-14 21:50:48.037  INFO 27759 --- [           main] .w.r.c.m.m.MovimentoDeRoboControllerTest : Starting MovimentoDeRoboControllerTest on localhost.localdomain with PID 27759 (started by felipelobas in /home/felipelobas/Documentos/code/NavegacaoDeTerreno)
+2017-12-14 21:50:48.042  INFO 27759 --- [           main] .w.r.c.m.m.MovimentoDeRoboControllerTest : No active profile set, falling back to default profiles: default
+2017-12-14 21:50:48.075  INFO 27759 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@740fb309: startup date [Thu Dec 14 21:50:48 BRST 2017]; root of context hierarchy
+2017-12-14 21:50:50.908  INFO 27759 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@740fb309: startup date [Thu Dec 14 21:50:48 BRST 2017]; root of context hierarchy
+2017-12-14 21:50:51.034  INFO 27759 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest/mars/{request}],methods=[POST]}" onto public java.lang.String com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboController.movimentarRobo(com.navegacaoDeTerreno.service.message.movimentoDeRobo.MovimentoRoboRequest)
+2017-12-14 21:50:51.037  INFO 27759 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboController.index()
+2017-12-14 21:50:51.038  INFO 27759 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest/mars/{request}],methods=[GET]}" onto public java.lang.String com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboController.get(com.navegacaoDeTerreno.service.message.movimentoDeRobo.MovimentoRoboRequest)
+2017-12-14 21:50:51.051  INFO 27759 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-14 21:50:51.052  INFO 27759 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-14 21:50:51.130  INFO 27759 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-14 21:50:51.130  INFO 27759 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-14 21:50:51.207  INFO 27759 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-14 21:50:51.391  INFO 27759 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2017-12-14 21:50:51.391  INFO 27759 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-14 21:50:51.416  INFO 27759 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 25 ms
+Let's inspect the beans provided by Spring Boot:
+application
+basicErrorController
+beanNameHandlerMapping
+beanNameViewResolver
+cacheAutoConfigurationValidator
+cacheAutoConfigurationValidatorPostProcessor
+cacheInterceptor
+cacheManager
+cacheManagerCustomizers
+cacheOperationSource
+comandoParaDireita
+comandoParaEsquerda
+comandoParaFrente
+commandLineRunner
+defaultServletHandlerMapping
+defaultValidator
+defaultViewResolver
+duplicateServerPropertiesDetector
+error
+errorAttributes
+errorPageCustomizer
+faviconHandlerMapping
+faviconRequestHandler
+handlerExceptionResolver
+hiddenHttpMethodFilter
+httpPutFormContentFilter
+httpRequestHandlerAdapter
+jacksonObjectMapper
+jacksonObjectMapperBuilder
+jsonComponentModule
+mappingJackson2HttpMessageConverter
+messageConverters
+methodValidationPostProcessor
+mockMvc
+mockMvcBuilder
+movimentoDeRoboController
+movimentoParaLeste
+movimentoParaNorte
+movimentoParaOeste
+movimentoParaSul
+movimentoRoboImpl
+movimentoRoboServiceImpl
+mvcContentNegotiationManager
+mvcConversionService
+mvcPathMatcher
+mvcResourceUrlProvider
+mvcUriComponentsContributor
+mvcUrlPathHelper
+mvcValidator
+mvcViewResolver
+org.springframework.aop.config.internalAutoProxyCreator
+org.springframework.boot.autoconfigure.AutoConfigurationPackages
+org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration
+org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration
+org.springframework.boot.autoconfigure.condition.BeanTypeRegistry
+org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration
+org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration
+org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration
+org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration
+org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration
+org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration
+org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration
+org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration
+org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration
+org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration
+org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration
+org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration
+org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter
+org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration
+org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor
+org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store
+org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration
+org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration
+org.springframework.boot.test.context.ImportsContextCustomizer$ImportsCleanupPostProcessor
+org.springframework.boot.test.mock.mockito.MockitoPostProcessor
+org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor
+org.springframework.cache.annotation.ProxyCachingConfiguration
+org.springframework.cache.config.internalCacheAdvisor
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalRequiredAnnotationProcessor
+org.springframework.context.event.internalEventListenerFactory
+org.springframework.context.event.internalEventListenerProcessor
+preserveErrorControllerTargetClassPostProcessor
+requestContextFilter
+requestMappingHandlerAdapter
+requestMappingHandlerMapping
+resourceHandlerMapping
+roboJsonDataAccess
+serverProperties
+simpleControllerHandlerAdapter
+spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties
+spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties
+spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties
+spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties
+spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties
+springBootMockMvcBuilderCustomizer
+standardJacksonObjectMapperBuilderCustomizer
+stringHttpMessageConverter
+terrenoJsonDataAccess
+viewControllerHandlerMapping
+viewResolver
+welcomePageHandlerMapping
+2017-12-14 21:50:51.551  INFO 27759 --- [           main] .w.r.c.m.m.MovimentoDeRoboControllerTest : Started MovimentoDeRoboControllerTest in 3.898 seconds (JVM running for 5.275)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /rest/mars/MML
+       Parameters = {}
+          Headers = {Accept=[application/json]}
+
+Handler:
+             Type = com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboController
+           Method = public java.lang.String com.navegacaoDeTerreno.web.rest.controllers.mars.movimentoDeRobo.MovimentoDeRoboController.movimentarRobo(com.navegacaoDeTerreno.service.message.movimentoDeRobo.MovimentoRoboRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = java.lang.IllegalArgumentException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+</testsuite>

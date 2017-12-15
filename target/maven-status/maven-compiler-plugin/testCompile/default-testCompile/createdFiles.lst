@@ -1,0 +1,12 @@
+com/navegacaoDeTerreno/domain/robo/movimento/comando/ComandoParaEsquerdaTest.class
+hello/HelloControllerIT.class
+com/navegacaoDeTerreno/TesteHelper.class
+com/navegacaoDeTerreno/domain/robo/movimento/comando/ComandoParaDireitaTest.class
+com/navegacaoDeTerreno/domain/robo/movimento/deslocamento/MovimentoFactoryTest.class
+com/navegacaoDeTerreno/domain/robo/movimento/deslocamento/MovimentoParaLesteTest.class
+com/navegacaoDeTerreno/service/implementation/movimentoDeRobo/MovimentoRoboServiceImplTest.class
+com/navegacaoDeTerreno/domain/robo/movimento/deslocamento/MovimentoParaSulTest.class
+hello/HelloControllerTest.class
+com/navegacaoDeTerreno/domain/robo/movimento/deslocamento/MovimentoParaNorteTest.class
+com/navegacaoDeTerreno/domain/robo/movimento/deslocamento/MovimentoParaOesteTest.class
+com/navegacaoDeTerreno/domain/robo/movimento/comando/ComandoFactoryTest.class

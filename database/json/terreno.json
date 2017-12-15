@@ -1,0 +1,5 @@
+{
+    "tamanhoX": 5,
+    "tamanhoY": 5,
+    "direcoes": ["N", "E", "S", "W"]
+}
